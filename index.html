@@ -8,9 +8,12 @@
     <meta name="keywords" content="Sir Alex Ferguson, Biography, Manchester United, Football">
     <meta name="description" content="Biography and achievements of Sir Alex Ferguson, the legendary Manchester United manager.">
     <title>Sir Alex Ferguson</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+   
 </head>
 <body>
-    <header id="top">
+    <header>
         <h1>Sir Alex Ferguson</h1>
     </header>
     <main>
@@ -26,9 +29,6 @@
             <h2>Achievements</h2>
             <figure>
                 <img src="images/Ferguson_trophies.jpg" alt="Sir Alex Ferguson with trophies" width="200" height="200">
-                <img src="images/Ferguson_trophies (3).jpg" alt="Sir Alex Ferguson with trophies" width="200" height="200">
-                <img src="images/Ferguson_trophies (2).jpg" alt="Sir Alex Ferguson with trophies" width="200" height="200">
-
                 <figcaption>Sir Alex Ferguson with some of his numerous trophies</figcaption>
             </figure>
             <p>Ferguson's ability to rebuild teams and maintain a high level of performance over decades is unparalleled. His notable achievements include winning the treble in 1999, consisting of the Premier League, FA Cup, and UEFA Champions League in a single season.</p>
@@ -42,7 +42,7 @@
             <h2>Media</h2>
             <video width="320" height="240" controls>
                 <source src="videos/Sir Alex Ferguson interview.mp4" type="video/mp4">
-                
+                Your browser does not support the video tag.
             </video>
         </section>
     </main>
@@ -57,59 +57,16 @@
         </section>
         <section id="contact">
             <h2>Contact Form</h2>
-            <form method="post" action="contact.php" id="contact_us" autocomplete="off">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label for="name" class="form-label">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required autofocus>
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Your email" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Preferences</legend>
-                    <label for="gender" class="form-label">Gender:</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other" checked>
-                    <label for="other">Other</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Streaming Services</legend>
-                    <input type="checkbox" id="netflix" name="streaming" value="netflix" checked>
-                    <label for="netflix">Netflix</label>
-                    <input type="checkbox" id="disney" name="streaming" value="disney">
-                    <label for="disney">Disney</label>
-                    <input type="checkbox" id="prime" name="streaming" value="prime">
-                    <label for="prime">Prime</label>
-                </fieldset>
+            <form>
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+                
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your email" required>
+                
                 <label for="comments" class="form-label">Comments:</label>
                 <textarea id="comments" name="comments" class="form-control" rows="4" placeholder="Your comments"></textarea>
-                <label for="documents" class="form-label">Upload Files:</label>
-                <input type="file" id="documents" name="documents" class="form-control" multiple>
-                <label for="car" class="form-label">What kind of car do you have?</label>
-                <select id="car" name="car" class="form-control" multiple size="4">
-                    <option value="" selected>Select option</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="BMW">BMW</option>
-                </select>
-                <label for="tel" class="form-label">Phone:</label>
-                <input type="tel" id="tel" name="tel" class="form-control" required>
-                <label for="url" class="form-label">Website:</label>
-                <input type="url" id="url" name="url" class="form-control">
-                <label for="age" class="form-label">Age:</label>
-                <input type="number" id="age" name="age" class="form-control" min="18" max="100" step="1">
-                <label for="dob" class="form-label">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" class="form-control">
-                <label for="color" class="form-label">Favorite Color:</label>
-                <input type="color" id="color" name="color" class="form-control">
-                <label for="range" class="form-label">On a scale of 1 to 10, how do you like HTML?</label>
-                <input type="range" id="range" name="range" class="form-control" min="1" max="10" step="1" value="5">
-                <label for="notrobot" class="form-label">I am not a robot</label>
-                <input type="checkbox" id="notrobot" name="notrobot" value="true">
-                <input type="reset" value="Clear Form" class="form-control">
+                
                 <input type="submit" value="Submit" class="form-control">
             </form>
         </section>
@@ -119,4 +76,5 @@
     </footer>
 </body>
 </html>
+
 
